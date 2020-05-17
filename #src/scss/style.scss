@@ -9,3 +9,31 @@
 }
 
 @import "fonts";
+
+.page {
+	&-main {
+		padding-top: 0;
+	}
+}
+.wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1481px;
+	margin-left: 53px;
+	margin-right: 65px;
+	&__logo {
+		height: 56px;
+		width: 161px;
+	}
+}
+.menu-list {
+	display: flex;
+	&__item {
+		list-style-type: none;
+		text-decoration: none;
+	}
+}
