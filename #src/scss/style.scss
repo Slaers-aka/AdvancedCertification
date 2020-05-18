@@ -189,3 +189,32 @@
 		}
 	}
 }
+.agency {
+	&-items {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+	}
+	&-letter {
+		position: relative;
+		height: 518px;
+		width: 465px;
+		&__letter {
+			color: transparent;
+			font-size: 550px;
+			line-height: 450px;
+			font-family: "Belgrad";
+			background-image: url(../img/agency/agency.jpg);
+			background-size: cover;
+			background-clip: text;
+			transform: translateX(20%);
+			left: -67px;
+			position: relative;
+			text-align: right;
+			// height: 100%;
+			// width: 100%;
+			// background-image: url(../img/agency/agency.png);
+			// box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.4);
+		}
+	}
+}
