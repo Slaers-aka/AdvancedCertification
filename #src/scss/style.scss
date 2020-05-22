@@ -190,31 +190,73 @@
 	}
 }
 .agency {
+	position: relative;
+	padding-bottom: 121px;
 	&-items {
 		display: flex;
 		justify-content: space-between;
-		position: relative;
+		// position: relative;
+		align-items: top;
+	}
+	&-item {
+		max-width: 386px;
 	}
 	&-letter {
 		position: relative;
 		height: 518px;
 		width: 465px;
 		&__letter {
-			color: transparent;
-			font-size: 550px;
-			line-height: 450px;
-			font-family: "Belgrad";
-			background-image: url(../img/agency/agency.jpg);
-			background-size: cover;
-			background-clip: text;
-			transform: translateX(20%);
-			left: -67px;
-			position: relative;
-			text-align: right;
-			// height: 100%;
-			// width: 100%;
-			// background-image: url(../img/agency/agency.png);
-			// box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.4);
+			width: 100%;
+			height: 100%;
+			&-svg {
+				font-family: "Belgrad";
+				font-size: 400px;
+			}
+		}
+		// &__letter {
+		// ? Попробывать другой метод
+		// color: transparent;
+		// font-size: 550px;
+		// line-height: 450px;
+		// font-family: "Belgrad";
+		// background-image: url(../img/agency/agency.jpg);
+		// background-size: cover;
+		// background-clip: text;
+		// transform: translateX(20%);
+		// left: -67px;
+		// position: relative;
+		// text-align: right;
+		//--------------------
+		// height: 100%;
+		// width: 100%;
+		// background-image: url(../img/agency/agency.png);
+		// box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.4);
+		// }
+	}
+	&__letter {
+		position: absolute;
+		top: 373px;
+		left: 34%;
+		width: 465px;
+		height: 518px;
+		// font-family: "Belgrad";
+		// font-size: 600px;
+		// text-transform: uppercase;
+		// transition: 1s font-size;
+		// &-svg {
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: 48px;
+		// 	rect {
+		// 		fill: #fff;
+		// 		mask: url(#letter-mask);
+		// 	}
+		// }
+		&-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 		}
 	}
 }

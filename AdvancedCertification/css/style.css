@@ -292,6 +292,11 @@
   background-image: linear-gradient(to top, #de813c, #3f519a);
 }
 
+.agency {
+  position: relative;
+  padding-bottom: 121px;
+}
+
 .agency-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,7 +304,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.agency-item {
+  max-width: 386px;
 }
 
 .agency-letter {
@@ -309,22 +320,30 @@
 }
 
 .agency-letter__letter {
-  color: transparent;
-  font-size: 550px;
-  line-height: 450px;
+  width: 100%;
+  height: 100%;
+}
+
+.agency-letter__letter-svg {
   font-family: "Belgrad";
-  background-image: url(../img/agency/agency.jpg);
-  background-size: cover;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-transform: translateX(20%);
-      -ms-transform: translateX(20%);
-          transform: translateX(20%);
-  left: -67px;
-  position: relative;
-  text-align: right;
+  font-size: 400px;
+}
+
+.agency__letter {
+  position: absolute;
+  top: 373px;
+  left: 34%;
+  width: 465px;
+  height: 518px;
+}
+
+.agency__letter-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+          filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
 }
 
 .webp .page-main { background-image: url(../img/main/main-bg.webp); }
-
-.webp .agency-letter__letter { background-image: url(../img/agency/agency.webp); }
