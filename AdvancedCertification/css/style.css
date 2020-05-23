@@ -111,6 +111,11 @@
   padding-bottom: 74px;
 }
 
+.page-services {
+  padding-top: 86px;
+  padding-bottom: 90px;
+}
+
 .page-btn {
   color: #fff;
   position: absolute;
@@ -474,4 +479,31 @@
   margin-top: 31px;
 }
 
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__bg {
+  background-color: #f4f4f4;
+  width: 100%;
+}
+
+.services__bg-right {
+  background-image: url(../img/services/services-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.services__content {
+  width: 730px;
+}
+
 .webp .page-main { background-image: url(../img/main/main-bg.webp); }
+
+.webp .services__bg-right { background-image: url(../img/services/services-bg.webp); }
