@@ -10,12 +10,21 @@
 
 @import "fonts";
 
+$tittle-color: #333332;
+$text-color: #040404;
+
 * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
 .page {
+	color: $text-color;
+	font-family: "Lato";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 30px;
+	letter-spacing: 0.45px;
 	&-main {
 		background-image: url(../img/main/main-bg.jpg);
 		background-repeat: no-repeat;
@@ -26,6 +35,33 @@
 	}
 	&-agency {
 		padding-top: 394px;
+	}
+	&-btn {
+		color: #fff;
+		position: absolute;
+		display: block;
+		width: 143px;
+		font-family: Lato;
+		font-size: 15.5px;
+		font-weight: 700;
+		letter-spacing: 0.39px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-radius: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-radius: 25px;
+		// margin: 0 auto;
+		background-image: linear-gradient(to top, #de813c, #3f519a);
+	}
+	&-title {
+		color: $tittle-color;
+		font-family: "Bernadette";
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 65px;
+		text-align: left;
 	}
 }
 .wrap {
@@ -167,39 +203,52 @@
 			text-align: center;
 		}
 		&__btn {
-			color: #fff;
-			position: absolute;
-			display: block;
 			bottom: -24px;
 			left: 117px;
-			width: 143px;
-			font-family: Lato;
-			font-size: 15.5px;
-			font-weight: 700;
-			letter-spacing: 0.39px;
-			text-align: center;
-			text-decoration: none;
-			text-transform: uppercase;
-			border-radius: 15px;
-			padding-top: 13px;
-			padding-bottom: 14px;
-			border-radius: 25px;
-			margin: 0 auto;
-			background-image: linear-gradient(to top, #de813c, #3f519a);
 		}
 	}
 }
 .agency {
 	position: relative;
-	padding-bottom: 121px;
+	padding-bottom: 215px;
 	&-items {
 		display: flex;
 		justify-content: space-between;
-		// position: relative;
+		position: relative;
 		align-items: top;
 	}
 	&-item {
 		max-width: 386px;
+		&__title {
+			margin-bottom: 29px;
+			letter-spacing: -3.75px;
+			//width: 305px;
+			margin-left: 10px;
+			margin-top: 5px;
+			line-height: 62px;
+		}
+		&__intro {
+			font-weight: 400;
+		}
+		&__descr {
+			font-weight: 300;
+		}
+		&__quote {
+			font-style: italic;
+		}
+		&__sign {
+			font-size: 47px;
+			margin-left: 57px;
+			margin-top: 29px;
+			letter-spacing: -3.53px;
+		}
+		&__btn {
+			margin-top: 40px;
+			margin-left: 6px;
+		}
+		&--quote {
+			padding-top: 72px;
+		}
 	}
 	&-letter {
 		position: relative;
@@ -235,10 +284,11 @@
 	}
 	&__letter {
 		position: absolute;
-		top: 373px;
-		left: 34%;
-		width: 465px;
-		height: 518px;
+		top: 377px;
+		left: 573px;
+		width: 464px;
+		height: 583px;
+		z-index: -5;
 		// font-family: "Belgrad";
 		// font-size: 600px;
 		// text-transform: uppercase;

@@ -85,6 +85,15 @@
   margin: 0;
 }
 
+.page {
+  color: #040404;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+}
+
 .page-main {
   background-image: url(../img/main/main-bg.jpg);
   background-repeat: no-repeat;
@@ -96,6 +105,36 @@
 
 .page-agency {
   padding-top: 394px;
+}
+
+.page-btn {
+  color: #fff;
+  position: absolute;
+  display: block;
+  width: 143px;
+  font-family: Lato;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: 0.39px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#de813c), to(#3f519a));
+  background-image: -o-linear-gradient(bottom, #de813c, #3f519a);
+  background-image: linear-gradient(to top, #de813c, #3f519a);
+}
+
+.page-title {
+  color: #333332;
+  font-family: "Bernadette";
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 65px;
+  text-align: left;
 }
 
 .wrap {
@@ -269,32 +308,13 @@
 }
 
 .main-benefits__btn {
-  color: #fff;
-  position: absolute;
-  display: block;
   bottom: -24px;
   left: 117px;
-  width: 143px;
-  font-family: Lato;
-  font-size: 15.5px;
-  font-weight: 700;
-  letter-spacing: 0.39px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 15px;
-  padding-top: 13px;
-  padding-bottom: 14px;
-  border-radius: 25px;
-  margin: 0 auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#de813c), to(#3f519a));
-  background-image: -o-linear-gradient(bottom, #de813c, #3f519a);
-  background-image: linear-gradient(to top, #de813c, #3f519a);
 }
 
 .agency {
   position: relative;
-  padding-bottom: 121px;
+  padding-bottom: 215px;
 }
 
 .agency-items {
@@ -304,6 +324,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
   -webkit-box-align: top;
       -ms-flex-align: top;
           align-items: top;
@@ -311,6 +332,42 @@
 
 .agency-item {
   max-width: 386px;
+}
+
+.agency-item__title {
+  margin-bottom: 29px;
+  letter-spacing: -3.75px;
+  margin-left: 10px;
+  margin-top: 5px;
+  line-height: 62px;
+}
+
+.agency-item__intro {
+  font-weight: 400;
+}
+
+.agency-item__descr {
+  font-weight: 300;
+}
+
+.agency-item__quote {
+  font-style: italic;
+}
+
+.agency-item__sign {
+  font-size: 47px;
+  margin-left: 57px;
+  margin-top: 29px;
+  letter-spacing: -3.53px;
+}
+
+.agency-item__btn {
+  margin-top: 40px;
+  margin-left: 6px;
+}
+
+.agency-item--quote {
+  padding-top: 72px;
 }
 
 .agency-letter {
@@ -331,10 +388,11 @@
 
 .agency__letter {
   position: absolute;
-  top: 373px;
-  left: 34%;
-  width: 465px;
-  height: 518px;
+  top: 377px;
+  left: 573px;
+  width: 464px;
+  height: 583px;
+  z-index: -5;
 }
 
 .agency__letter-img {
