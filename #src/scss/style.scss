@@ -41,12 +41,12 @@ $gray-bg-color: #f4f4f4;
 		padding-bottom: 74px;
 	}
 	&-services {
-		padding-top: 86px;
-		padding-bottom: 90px;
+		display: flex;
+		justify-content: space-between;
+		overflow: hidden;
 	}
 	&-btn {
 		color: #fff;
-		position: absolute;
 		display: block;
 		width: 143px;
 		font-family: Lato;
@@ -60,7 +60,6 @@ $gray-bg-color: #f4f4f4;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		border-radius: 25px;
-		// margin: 0 auto;
 		background-image: linear-gradient(to top, #de813c, #3f519a);
 	}
 	&-title {
@@ -73,7 +72,8 @@ $gray-bg-color: #f4f4f4;
 	}
 }
 .wrap {
-	max-width: 1170px;
+	max-width: 1210px;
+	padding: 0 20px;
 	margin: 0 auto;
 	&-relative {
 		position: relative;
@@ -214,6 +214,7 @@ $gray-bg-color: #f4f4f4;
 			text-align: center;
 		}
 		&__btn {
+			position: absolute;
 			bottom: -24px;
 			left: 117px;
 		}
@@ -373,19 +374,70 @@ $gray-bg-color: #f4f4f4;
 	}
 }
 .services {
-	display: flex;
-	justify-content: space-between;
-	&__bg {
+	&__content {
 		background-color: $gray-bg-color;
-		width: 100%;
-		&-right {
-			background-image: url(../img/services/services-bg.jpg);
-			background-repeat: no-repeat;
-			background-position: center center;
-			background-size: cover;
+		flex: 0 0 100%;
+		display: flex;
+		align-items: center;
+	}
+	&__image {
+		position: relative;
+		// flex: 0 0 30%;
+		flex: 0 0 calc(((100vw - 40px) * 0.3) + 20px);
+		transform: translate(-100%, 0px);
+		&-img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			object-fit: cover;
+		}
+		//? Примерно 0.6 - 0.4
+		@media (min-width: 1210px) {
+			flex: 0 0 calc(50vw - (0.6 - 0.4) * 1170px);
 		}
 	}
-	&__content {
-		width: 730px;
+	&-visual {
+		display: none;
+		//-------
+		color: #fff;
+		width: 355px;
+		height: 473px;
+		padding: 25px 28px;
+		border-radius: 10px;
+		background-image: linear-gradient(to bottom right, #de813c, #3f519a);
+		&__items {
+			display: grid;
+			grid-template: 1fr 1fr / 1fr 1fr;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__item {
+			width: 151px;
+			height: 125px;
+			&-descr {
+				font-size: 17px;
+				line-height: normal;
+				font-weight: 800;
+				letter-spacing: 0.43px;
+				text-align: center;
+			}
+		}
+	}
+	&-text {
+		width: 50%;
+		padding-top: 86px;
+		padding-bottom: 90px;
+		&__title {
+			margin-bottom: 41px;
+		}
+		&__intro {
+			font-weight: 400;
+		}
+		&__descr {
+			font-weight: 300;
+			margin-bottom: 48px;
+		}
 	}
 }
