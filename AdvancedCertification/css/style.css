@@ -516,15 +516,18 @@
   left: 0;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -5;
 }
 
 .services-visual {
-  display: none;
+  position: absolute;
   color: #fff;
   width: 355px;
   height: 473px;
   padding: 25px 28px;
   border-radius: 10px;
+  top: 90px;
+  left: -154px;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#de813c), to(#3f519a));
   background-image: -o-linear-gradient(top left, #de813c, #3f519a);
   background-image: linear-gradient(to bottom right, #de813c, #3f519a);

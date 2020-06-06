@@ -392,6 +392,7 @@ $gray-bg-color: #f4f4f4;
 			top: 0;
 			left: 0;
 			object-fit: cover;
+			z-index: -5;
 		}
 		//? Примерно 0.6 - 0.4
 		@media (min-width: 1210px) {
@@ -399,13 +400,14 @@ $gray-bg-color: #f4f4f4;
 		}
 	}
 	&-visual {
-		display: none;
-		//-------
+		position: absolute;
 		color: #fff;
 		width: 355px;
 		height: 473px;
 		padding: 25px 28px;
 		border-radius: 10px;
+		top: 90px;
+		left: -154px;
 		background-image: linear-gradient(to bottom right, #de813c, #3f519a);
 		&__items {
 			display: grid;
