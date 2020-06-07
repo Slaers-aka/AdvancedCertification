@@ -45,6 +45,14 @@ $gray-bg-color: #f4f4f4;
 		justify-content: space-between;
 		overflow: hidden;
 	}
+	&-social {
+		background-image: url(../img/social/social-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		padding-top: 80px;
+		padding-bottom: 94px;
+	}
 	&-btn {
 		color: #fff;
 		display: block;
@@ -118,11 +126,12 @@ $gray-bg-color: #f4f4f4;
 		&__title {
 			font-family: Bernadette;
 			font-size: 111px;
+			line-height: 149px;
 			font-weight: 400;
 			letter-spacing: -5.55px;
 			text-align: center;
 			margin-top: 0;
-			margin-bottom: 30px;
+			margin-bottom: 18px;
 		}
 		&__subtitle {
 			font-family: Lato;
@@ -440,6 +449,63 @@ $gray-bg-color: #f4f4f4;
 		&__descr {
 			font-weight: 300;
 			margin-bottom: 48px;
+		}
+	}
+}
+.social {
+	&__title {
+		color: #fff;
+		text-align: center;
+		// margin-left: 663px;
+		margin-bottom: 65px;
+	}
+	&-list {
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+		&__item {
+			display: block;
+			margin-left: 20px;
+			margin-right: 20px;
+			height: 82px;
+			width: 82px;
+			// border: 3px solid #fff;
+			// border-radius: 100%;
+			// text-align: center;
+			// &--facebook {
+			// 	padding: 24px 32px 23px 31px;
+			// }
+			// &--google-plus {
+			// 	padding: 26px 16px 25px 19px;
+			// }
+			// &--vk {
+			// 	padding: 33px 22px 26px 21px;
+			// }
+			// &--youtube {
+			// 	padding: 23px 26px 22px 25px;
+			// }
+			// &--linkedin {
+			// 	padding: 25px 25px 26px 25px;
+			// }
+			// &--digg {
+			// 	padding: 29px 22px 27px 17px;
+			// }
+			// &--deviantart {
+			// 	padding: 24px 32px 23px 29px;
+			// }
+			&-link {
+				// color: #fff;
+				// font-size: 36.5px;
+				// line-height: 82px;
+				text-decoration: none;
+				&-svg {
+					width: 100%;
+					height: 100%;
+				}
+			}
 		}
 	}
 }
