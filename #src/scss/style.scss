@@ -243,7 +243,6 @@ $gray-bg-color: #f4f4f4;
 		&__title {
 			margin-bottom: 29px;
 			letter-spacing: -3.75px;
-			//width: 305px;
 			margin-left: 10px;
 			margin-top: 5px;
 			line-height: 62px;
@@ -405,12 +404,27 @@ $gray-bg-color: #f4f4f4;
 		&__item {
 			width: 151px;
 			height: 125px;
+
 			&-descr {
 				font-size: 17px;
 				line-height: normal;
 				font-weight: 800;
 				letter-spacing: 0.43px;
 				text-align: center;
+			}
+			&-icon {
+				&-svg {
+					height: 100%;
+					width: 100%;
+				}
+				&--flag {
+					width: 40px;
+					height: 46px;
+				}
+				&--media {
+					width: 46px;
+					height: 45px;
+				}
 			}
 		}
 	}
