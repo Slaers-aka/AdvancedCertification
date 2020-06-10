@@ -268,7 +268,16 @@ $gray-bg-color: #f4f4f4;
 			margin-left: 6px;
 		}
 		&--quote {
+			position: relative;
 			padding-top: 72px;
+			&::before {
+				content: url("../img/agency/quote.png");
+				width: 83px;
+				height: 88px;
+				position: absolute;
+				top: 31px;
+				left: -102px;
+			}
 		}
 	}
 	&-letter {
@@ -283,24 +292,6 @@ $gray-bg-color: #f4f4f4;
 				font-size: 400px;
 			}
 		}
-		// &__letter {
-		// color: transparent;
-		// font-size: 550px;
-		// line-height: 450px;
-		// font-family: "Belgrad";
-		// background-image: url(../img/agency/agency.jpg);
-		// background-size: cover;
-		// background-clip: text;
-		// transform: translateX(20%);
-		// left: -67px;
-		// position: relative;
-		// text-align: right;
-		//--------------------
-		// height: 100%;
-		// width: 100%;
-		// background-image: url(../img/agency/agency.png);
-		// box-shadow: 10px 10px 49px 0px rgba(0, 0, 0, 0.4);
-		// }
 	}
 	&__letter {
 		position: absolute;
@@ -309,19 +300,6 @@ $gray-bg-color: #f4f4f4;
 		width: 464px;
 		height: 583px;
 		z-index: -5;
-		// font-family: "Belgrad";
-		// font-size: 600px;
-		// text-transform: uppercase;
-		// transition: 1s font-size;
-		// &-svg {
-		// 	position: absolute;
-		// 	left: 0;
-		// 	top: 48px;
-		// 	rect {
-		// 		fill: #fff;
-		// 		mask: url(#letter-mask);
-		// 	}
-		// }
 		&-img {
 			width: 100%;
 			height: 100%;
