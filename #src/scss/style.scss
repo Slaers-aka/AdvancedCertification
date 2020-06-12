@@ -268,7 +268,16 @@ $gray-bg-color: #f4f4f4;
 			margin-left: 6px;
 		}
 		&--quote {
+			position: relative;
 			padding-top: 72px;
+			&::before {
+				content: url("../img/agency/quote.png");
+				width: 83px;
+				height: 88px;
+				position: absolute;
+				top: 31px;
+				left: -102px;
+			}
 		}
 	}
 	&-letter {

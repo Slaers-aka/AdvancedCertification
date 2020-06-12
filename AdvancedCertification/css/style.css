@@ -396,7 +396,17 @@
 }
 
 .agency-item--quote {
+  position: relative;
   padding-top: 72px;
+}
+
+.agency-item--quote::before {
+  content: url("../img/agency/quote.png");
+  width: 83px;
+  height: 88px;
+  position: absolute;
+  top: 31px;
+  left: -102px;
 }
 
 .agency-letter {
