@@ -130,6 +130,11 @@
   padding-bottom: 94px;
 }
 
+.page-footer {
+  padding-top: 102px;
+  padding-bottom: 38px;
+}
+
 .page-btn {
   color: #fff;
   display: block;
@@ -632,6 +637,82 @@
 .social-list__item-link-svg {
   width: 100%;
   height: 100%;
+}
+
+.footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 79px;
+}
+
+.footer-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer-item__icon-img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-item__icon--email {
+  width: 54px;
+  height: 42px;
+}
+
+.footer-item__icon--call {
+  width: 36px;
+  height: 54px;
+}
+
+.footer-item__icon--address {
+  width: 52px;
+  height: 54px;
+}
+
+.footer-item__text {
+  margin-left: 28px;
+}
+
+.footer-item__text-title {
+  color: #494949;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.43px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-item__text-link,
+.footer-item__text-address {
+  display: block;
+  color: #494949;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+
+.footer-by-designed {
+  text-align: center;
+}
+
+.footer-by-designed-text {
+  color: #2f2f2f;
+  font-size: 17px;
+  line-height: 1.41;
+  letter-spacing: 0.43px;
 }
 
 @media (min-width: 1210px) {
