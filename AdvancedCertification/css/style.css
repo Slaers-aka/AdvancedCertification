@@ -564,17 +564,79 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .services-visual__item {
-  width: 151px;
-  height: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  height: 142px;
+}
+
+.services-visual__item--top {
+  border-bottom: 3px dotted rgba(255, 255, 255, 0.29);
+}
+
+.services-visual__item--middle {
+  border-bottom: 3px dotted rgba(255, 255, 255, 0.29);
+}
+
+.services-visual__item--left {
+  border-right: 3px dotted rgba(255, 255, 255, 0.29);
+  margin-right: 3px;
+}
+
+.services-visual__item-icon {
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.services-visual__item-icon-obj {
+  width: 100%;
+  height: 100%;
+}
+
+.services-visual__item-icon--logo-branding {
+  width: 40px;
+  height: 46px;
+}
+
+.services-visual__item-icon--social-media {
+  width: 46px;
+  height: 45px;
+}
+
+.services-visual__item-icon--products {
+  width: 49px;
+  height: 54px;
+}
+
+.services-visual__item-icon--lorei {
+  width: 36px;
+  height: 35px;
+}
+
+.services-visual__item-icon--mobile-web {
+  width: 36px;
+  height: 42px;
 }
 
 .services-visual__item-descr {
+  display: block;
+  width: 105px;
+  margin: 0 auto;
   font-size: 17px;
   line-height: normal;
   font-weight: 800;

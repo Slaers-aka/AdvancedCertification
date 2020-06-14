@@ -436,12 +436,69 @@ $gray-bg-color: #f4f4f4;
 			display: grid;
 			grid-template: 1fr 1fr / 1fr 1fr;
 			justify-content: space-between;
-			align-items: center;
+			align-items: flex-start;
 		}
 		&__item {
-			width: 151px;
-			height: 125px;
+			// width: 157px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding-top: 22px;
+			padding-bottom: 25px;
+			height: 142px;
+			// margin-left: -1.5px;
+			// margin-right: -1.5px;
+			&--top {
+				border-bottom: 3px dotted rgba(255, 255, 255, 0.29);
+			}
+			&--middle {
+				border-bottom: 3px dotted rgba(255, 255, 255, 0.29);
+			}
+			&--left {
+				border-right: 3px dotted rgba(255, 255, 255, 0.29);
+				margin-right: 3px;
+			}
+			// &--top {
+			// 	height: 124px;
+			// }
+			// &--middle {
+			// 	height: 154px;
+			// }
+			// &--bottom {
+			// 	height: 125px;
+			// }
+			&-icon {
+				margin: 0 auto;
+				margin-bottom: 12px;
+				&-obj {
+					width: 100%;
+					height: 100%;
+				}
+				&--logo-branding {
+					width: 40px;
+					height: 46px;
+				}
+				&--social-media {
+					width: 46px;
+					height: 45px;
+				}
+				&--products {
+					width: 49px;
+					height: 54px;
+				}
+				&--lorei {
+					width: 36px;
+					height: 35px;
+				}
+				&--mobile-web {
+					width: 36px;
+					height: 42px;
+				}
+			}
 			&-descr {
+				display: block;
+				width: 105px;
+				margin: 0 auto;
 				font-size: 17px;
 				line-height: normal;
 				font-weight: 800;
