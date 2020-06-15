@@ -561,12 +561,17 @@
 .services-visual__items {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap: 3px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background: -o-radial-gradient(circle, rgba(255, 255, 255, 0.29) 1px, transparent 0), -o-radial-gradient(circle, rgba(255, 255, 255, 0.29) 1px, transparent 0);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.29) 1px, transparent 0), radial-gradient(circle, rgba(255, 255, 255, 0.29) 1px, transparent 0);
+  background-size: 8px 152px, 200px 8px;
+  background-position: 50px 71px;
 }
 
 .services-visual__item {
@@ -583,19 +588,6 @@
   padding-top: 22px;
   padding-bottom: 25px;
   height: 142px;
-}
-
-.services-visual__item--top {
-  border-bottom: 3px dotted rgba(255, 255, 255, 0.29);
-}
-
-.services-visual__item--middle {
-  border-bottom: 3px dotted rgba(255, 255, 255, 0.29);
-}
-
-.services-visual__item--left {
-  border-right: 3px dotted rgba(255, 255, 255, 0.29);
-  margin-right: 3px;
 }
 
 .services-visual__item-icon {
