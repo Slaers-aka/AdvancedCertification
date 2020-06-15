@@ -130,6 +130,11 @@
   padding-bottom: 94px;
 }
 
+.page-team {
+  padding-top: 100px;
+  padding-bottom: 67px;
+}
+
 .page-footer {
   padding-top: 102px;
   padding-bottom: 38px;
@@ -585,9 +590,22 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 22px;
-  padding-bottom: 25px;
   height: 142px;
+}
+
+.services-visual__item--top {
+  padding-top: 22px;
+  padding-bottom: 18px;
+}
+
+.services-visual__item--middle {
+  padding-top: 25px;
+  padding-bottom: 8px;
+}
+
+.services-visual__item--bottom {
+  padding-top: 30px;
+  padding-bottom: 15px;
 }
 
 .services-visual__item-icon {
@@ -653,6 +671,77 @@
 .services-text__descr {
   font-weight: 300;
   margin-bottom: 48px;
+}
+
+.team {
+  position: relative;
+}
+
+.team__title {
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.team-descr {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 71px;
+}
+
+.team-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-items__item-image {
+  width: 218px;
+  height: 273px;
+  margin-bottom: 46px;
+}
+
+.team-items__item-image-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team-items__item-title {
+  color: #333332;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.63px;
+  text-align: center;
+}
+
+.team-items__item-post {
+  color: #a3a3a3;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.team::after {
+  content: "";
+  position: absolute;
+  width: 1296px;
+  height: 317px;
+  background-color: #f4f4f4;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: -10;
 }
 
 .social__title {
