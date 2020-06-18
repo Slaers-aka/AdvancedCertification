@@ -46,14 +46,6 @@ $gray-bg-color: #f4f4f4;
 		justify-content: space-between;
 		overflow: hidden;
 	}
-	&-social {
-		background-image: url(../img/social/social-bg.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		padding-top: 80px;
-		padding-bottom: 94px;
-	}
 	&-team {
 		padding-top: 100px;
 		padding-bottom: 67px;
@@ -63,6 +55,20 @@ $gray-bg-color: #f4f4f4;
 		overflow: hidden;
 		padding-top: 64px;
 		padding-bottom: 128px;
+	}
+	&-price {
+		display: flex;
+		overflow: hidden;
+		padding-top: 94px;
+		padding-bottom: 105px;
+	}
+	&-social {
+		background-image: url(../img/social/social-bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		padding-top: 80px;
+		padding-bottom: 94px;
 	}
 	&-footer {
 		padding-top: 102px;
@@ -106,6 +112,9 @@ $gray-bg-color: #f4f4f4;
 	margin: 0 auto;
 	&-relative {
 		position: relative;
+	}
+	&--price {
+		max-width: 1480px;
 	}
 }
 .header {
@@ -730,6 +739,12 @@ $gray-bg-color: #f4f4f4;
 				background-color: #fff;
 				text-align: center;
 			}
+		}
+	}
+}
+.price {
+	&-data {
+		&__content {
 		}
 	}
 }

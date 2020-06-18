@@ -121,15 +121,6 @@
   overflow: hidden;
 }
 
-.page-social {
-  background-image: url(../img/social/social-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 80px;
-  padding-bottom: 94px;
-}
-
 .page-team {
   padding-top: 100px;
   padding-bottom: 67px;
@@ -142,6 +133,24 @@
   overflow: hidden;
   padding-top: 64px;
   padding-bottom: 128px;
+}
+
+.page-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding-top: 94px;
+  padding-bottom: 105px;
+}
+
+.page-social {
+  background-image: url(../img/social/social-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 80px;
+  padding-bottom: 94px;
 }
 
 .page-footer {
@@ -193,6 +202,10 @@
 
 .wrap-relative {
   position: relative;
+}
+
+.wrap--price {
+  max-width: 1480px;
 }
 
 .header {
