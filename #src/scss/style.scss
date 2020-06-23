@@ -58,7 +58,6 @@ $gray-bg-color: #f4f4f4;
 	}
 	&-price {
 		display: flex;
-		overflow: hidden;
 	}
 	&-social {
 		background-image: url(../img/social/social-bg.jpg);
@@ -690,6 +689,7 @@ $gray-bg-color: #f4f4f4;
 		display: flex;
 		flex: 0 0 calc(((100vw - 40px) * 0.5) + 20px);
 		transform: translate(-100%, 0px);
+		background-image: linear-gradient(to bottom right, #de813c, #3f519a);
 		@media (min-width: 1210px) {
 			flex: 0 0 calc(50vw - (0.5 - 0.5) * 1170px);
 		}
@@ -707,7 +707,7 @@ $gray-bg-color: #f4f4f4;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			background-image: linear-gradient(to bottom right, #de813c, #3f519a);
+			// background-image: linear-gradient(to bottom right, #de813c, #3f519a);
 			&-title {
 				font-size: 21px;
 				font-weight: 500;
@@ -744,8 +744,6 @@ $gray-bg-color: #f4f4f4;
 	&-visual {
 		position: relative;
 		flex: 0 0 30%;
-		// padding-top: 94px;
-		// padding-bottom: 105px;
 		background-image: linear-gradient(to bottom right, #de813c, #3f519a);
 	}
 	&-offer {
@@ -758,11 +756,65 @@ $gray-bg-color: #f4f4f4;
 		z-index: 5;
 		&__plan {
 			flex: 0 0 50%;
+			padding: 59px 52px 82px 37px;
 			background-color: #fff;
 		}
 		&__features {
 			flex: 0 0 50%;
+			padding: 106px 77px 39px 62px;
 			background-image: linear-gradient(to bottom right, #de813c, #3f519a);
+			&-title {
+				color: #fff;
+				font-family: "Myriad Pro Cond", serif;
+				font-size: 72px;
+				font-weight: 900;
+				letter-spacing: -3.6px;
+				text-align: center;
+				margin-bottom: 16px;
+			}
+			&-subtitle {
+				color: #fff;
+				font-size: 25px;
+				font-weight: 700;
+				letter-spacing: 0.63px;
+				text-align: center;
+				margin-bottom: 32px;
+			}
+			&-list {
+				color: #fff;
+				list-style-type: none;
+				&-item {
+					padding: 0;
+					padding-left: 16px;
+					&::before {
+						content: "f26b";
+					}
+				}
+			}
+		}
+		&__title {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		&__subtitle {
+			font-size: 25px;
+			font-weight: 700;
+			letter-spacing: 0.5px;
+			text-align: center;
+			margin-bottom: 23px;
+			&--top {
+				font-size: 20px;
+				margin-bottom: 53px;
+			}
+		}
+		&__descr {
+			text-align: center;
+		}
+		&__btn {
+			color: #020202;
+			background-color: #fff;
+			background-image: none;
+			margin: 0 auto;
 		}
 	}
 	&-data {
@@ -775,12 +827,9 @@ $gray-bg-color: #f4f4f4;
 		padding-top: 145px;
 		padding-bottom: 178px;
 		background-color: $gray-bg-color;
-		// transform: translate(-100%, 0px);
 		&__content {
 			position: absolute;
-			// position: relative;
 			top: 145px;
-			// right: 84px;
 			left: 458px;
 			max-width: 490px;
 		}
@@ -795,6 +844,54 @@ $gray-bg-color: #f4f4f4;
 		}
 	}
 }
+//----------------------
+// .price {
+// 	display: flex;
+// 	&-visual {
+// 		display: none;
+// 		position: relative;
+// 		flex: 0 0 20%;
+// 		transform: translate(100%, 0px);
+// 		flex: 0 0 100%;
+// 		padding-top: 93px;
+// 		padding-bottom: 105px;
+// 		transform: translate(100%, 0px);
+// 		background-image: linear-gradient(to bottom right, #de813c, #3f519a);
+// 	}
+// 	&-data {
+// 		flex: 0 0 80%;
+// 		transform: translate(-100%, 0px);
+// 		flex: 0 0 100%;
+// 		padding-top: 145px;
+// 		padding-bottom: 176px;
+// 		background-color: $gray-bg-color;
+// 	}
+// 	&-offer {
+// 		display: flex;
+// 		display: none;
+// 		height: 587px;
+// 		width: 762px;
+
+// 		&__plan {
+// 			flex: 0 0 50%;
+// 			background-color: #fff;
+// 		}
+// 		&__features {
+// 			flex: 0 0 50%;
+// 			background-image: linear-gradient(to bottom right, #de813c, #3f519a);
+// 		}
+// 	}
+// 	&-text {
+// 		&__title {
+// 			margin-bottom: 41px;
+// 		}
+// 		&__intro {
+// 			font-weight: 700;
+// 			margin-bottom: 46px;
+// 		}
+// 	}
+// }
+//-------------------------
 .social {
 	&__title {
 		color: #fff;

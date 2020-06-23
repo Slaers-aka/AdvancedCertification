@@ -71,7 +71,7 @@
 }
 
 @font-face {
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro Cond";
   font-display: swap;
   src: url("../fonts/Myriad Pro Black Condensed.woff") format("woff"), url("../fonts/Myriad Pro Black Condensed.woff2") format("woff2");
   font-weight: 900;
@@ -139,7 +139,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
 }
 
 .page-social {
@@ -862,6 +861,9 @@
   -webkit-transform: translate(-100%, 0px);
       -ms-transform: translate(-100%, 0px);
           transform: translate(-100%, 0px);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#de813c), to(#3f519a));
+  background-image: -o-linear-gradient(top left, #de813c, #3f519a);
+  background-image: linear-gradient(to bottom right, #de813c, #3f519a);
 }
 
 .profile-visual__image-img {
@@ -884,9 +886,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#de813c), to(#3f519a));
-  background-image: -o-linear-gradient(top left, #de813c, #3f519a);
-  background-image: linear-gradient(to bottom right, #de813c, #3f519a);
 }
 
 .profile-visual__info-title {
@@ -949,6 +948,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  padding: 59px 52px 82px 37px;
   background-color: #fff;
 }
 
@@ -956,9 +956,72 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
+  padding: 106px 77px 39px 62px;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#de813c), to(#3f519a));
   background-image: -o-linear-gradient(top left, #de813c, #3f519a);
   background-image: linear-gradient(to bottom right, #de813c, #3f519a);
+}
+
+.price-offer__features-title {
+  color: #fff;
+  font-family: "Myriad Pro Cond", serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: -3.6px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.price-offer__features-subtitle {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.63px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.price-offer__features-list {
+  color: #fff;
+  list-style-type: none;
+}
+
+.price-offer__features-list-item {
+  padding: 0;
+  padding-left: 16px;
+}
+
+.price-offer__features-list-item::before {
+  content: "f26b";
+}
+
+.price-offer__title {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.price-offer__subtitle {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.price-offer__subtitle--top {
+  font-size: 20px;
+  margin-bottom: 53px;
+}
+
+.price-offer__descr {
+  text-align: center;
+}
+
+.price-offer__btn {
+  color: #020202;
+  background-color: #fff;
+  background-image: none;
+  margin: 0 auto;
 }
 
 .price-data {
